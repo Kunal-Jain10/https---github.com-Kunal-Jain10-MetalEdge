@@ -5,7 +5,7 @@
 }
 
 .body{
-    background-image: url("/static/images/cover2.jpg");
+    background-image: url("/static/images/cover4.jpg");
     background-position: inherit;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,9 +19,10 @@
 }
 
 .page-title{
-    
+    font-size: 2em;    
     transform: rotateZ(270deg) rotateX(360deg);    
-    margin: 130% 0 0 0 ;
+    margin: 170% 0 0 0 ;
+    color: #1e1e1e;
 }
 
 .left-sec{
@@ -35,30 +36,36 @@
 .right-sec{
     position: fixed;
     margin: auto;
-    background-color: #171e22;
+    background-color: #1e1e1e;
     animation: rights 2s linear 1s; 
     width: 25%;
     height:inherit;
     right: 0;
-    top: 0;
+    top: 0;    
 }
 
 .login-btn:nth-child(1){
     text-decoration: none;    
-    color: #171e22;
+    color: #1e1e1e;
     background-color: aliceblue;
     padding: 4px 10px;
-    margin: 5% 5%;
+    margin: 5% 6%;
     position: absolute;
+}
 
+.quote{
+    color: aliceblue;
+    position: absolute;
+    top: 20%;
+    padding: 4%;
 }
 
 .login-btn:nth-child(2){
     text-decoration: none;    
-    color: #171e22;
+    color: #1e1e1e;
     background-color: aliceblue;
     padding: 4px 10px;
-    margin: 5% 30%;
+    margin: 5% 35%;
     position: absolute;
 }
 
@@ -91,7 +98,7 @@
     left: 15%;
     font-size: 3rem;
     font-weight: 600;
-    background-color: #171e22;
+    background-color: #1e1e1e;
     padding: 2%;
     animation:header 3s;   
 }
