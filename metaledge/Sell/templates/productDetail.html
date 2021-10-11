@@ -1,0 +1,43 @@
+{% extends 'sellbasic.html' %}
+{% load static %}
+
+{% block title %}MetalEdge{% endblock %}
+
+{% block body %}
+
+<div class="row g-0">
+    <div class="col-md-5 card mx-5 my-5">
+        <img src="{{ product.image.url }}" height="200px" width="250px">
+    </div>
+    <div class="col-md-5 mx-5 my-5">
+        <form method="POST" action="" enctype="multipart/form-data">
+            {%csrf_token%}
+            <label>Upload an image:</label>
+            <div class="form-control mb-3">
+            {{form.image}}
+            </div>
+            <label>Select type:</label>
+            <div class="mb-3">
+            {{form.type}}
+            </div>
+            <label>Product Name:</label>
+            <div class=" mb-3">
+                {{form.name}}
+            </div>
+            <label> Description:</label>
+            <div class=" mb-3">
+                {{form.description}}
+            </div>
+            <label>Price:</label>
+            <div class=" mb-2">
+                {{form.price}}
+            </div>
+               <div class="mt-3 mb-5 text-right" >
+                 <input class="btn add_btn" type="submit" value="Add">
+               </div>
+        </form>
+    </div>
+    </div>
+  </div>
+  
+{% endblock %}
